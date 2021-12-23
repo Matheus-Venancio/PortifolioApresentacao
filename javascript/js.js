@@ -1,5 +1,7 @@
 
 const btn2 = document.querySelector(".buttoContact")
+const ligthbox = document.createElement('imgHome')
+const images = document.querySelectorAll('img');
 
 /**Envia mensagem pelo email */
 btn2.onclick = function() {
@@ -52,6 +54,28 @@ window.onscroll = () =>{
   menu.classList.remove('fa-times')
   header.classList.remove('active')
 }
+
+// Image Expansion
+
+ligthbox.id = 'ligthbox'
+document.body.appendChild(ligthbox)
+images.forEach(image => {
+  image.addEventListener('click', e => {
+    ligthbox.classList.add('active')
+
+    const img = document.createElement('img')
+    img.src = image.src
+    while(ligthbox.firstChild){
+      ligthbox.removeChild(ligthbox.firstChild)
+    }
+    ligthbox.appendChild(img)
+  })
+})
+
+ligthbox.addEventListener('click', e => {
+  if(e.target !== e.currentTarget) return
+  ligthbox.classList.remove('active')
+})
 
 
 
