@@ -26,6 +26,7 @@ form.addEventListener('submit', (e) =>{
 
   if(phone.value.length<11){
     messages.push('o telefone tem que ter 11 caracteres')
+    
   }
 
   if(messages.length > 0){
