@@ -81,7 +81,7 @@ window.onscroll = () =>{
 
 // Image Expansion
 
-ligthbox.id = 'ligthbox'
+/*ligthbox.id = 'ligthbox'
 document.body.appendChild(ligthbox)
 images.forEach(image => {
   image.addEventListener('click', e => {
@@ -100,7 +100,7 @@ ligthbox.addEventListener('click', e => {
   if(e.target !== e.currentTarget) return
   ligthbox.classList.remove('active')
 })
-
+*/
 
 //Effects scrool
 

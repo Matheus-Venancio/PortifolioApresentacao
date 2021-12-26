@@ -98,7 +98,7 @@ header .navbar a:hover{
 #menu-bars{
   position: fixed;
   top: 1rem;
-  right: 1rem;
+  right: 11rem;
   z-index: 10000;
   background: var(--text_pink_100);
   color: #fff;
@@ -976,5 +976,11 @@ transition: all 2s ease;
   header{
     width: 100%;
   }
-  
+  .section-title{
+    font-size: 10px;
+    margin-top: 50px;
+  }
+  .about-info a{
+    font-size: 12px;
+  }
 }
