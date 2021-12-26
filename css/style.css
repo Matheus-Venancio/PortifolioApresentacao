@@ -976,11 +976,23 @@ transition: all 2s ease;
   header{
     width: 100%;
   }
+  .active a{
+    font-size: 1.8rem;
+  }
+  .navbar{
+    margin-top: -250px;
+  }
   .section-title{
     font-size: 10px;
     margin-top: 50px;
   }
   .about-info a{
     font-size: 12px;
+  }
+  .content-card h2{
+    font-size: 12px;
+  }
+  .content-card p{
+    font-size: 10px;
   }
 }
