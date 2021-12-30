@@ -975,6 +975,7 @@ transition: all 2s ease;
   }
   header{
     width: 100%;
+    padding: 0px 0px 340px;
   }
   .active a{
     font-size: 1.8rem;
