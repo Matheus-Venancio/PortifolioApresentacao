@@ -121,7 +121,8 @@ display: none;
 }
 
 .homeTwo .imageTwo img{
-  width: 55%;
+  width:500px;
+  margin-left: -60px;
 }
 #ligthbox{
   position: fixed;
@@ -570,9 +571,11 @@ a:hover{
 .about-img {
   flex: 0 0 40%;
   max-width: 40%;
-  padding: 0 10px;
 }
 
+.about-top{
+  margin-top: -90px;
+}
 .about-img .img-box {
   padding: 15px;
   border-radius: 5px;
@@ -580,7 +583,7 @@ a:hover{
 
 .about-img .img-box img {
   width: 100%;
-  border: 10px solid transparent;
+  border: 0px solid transparent;
   border-radius: 5px;
 }
 
@@ -902,6 +905,21 @@ transition: all 2s ease;
 .reveal.active{
   transform: translateY(0px);
   opacity: 1;
+}
+
+@media (max-width:1230px){
+  .homeTwo{
+    display: block;
+  }
+
+  .homeTwo .imageTwo{
+    margin-left: 20px;
+    margin-top: 90px;
+  }
+
+  .about-top{
+    margin-top: 50px;
+  }
 }
 
 @media (max-width:991px){
