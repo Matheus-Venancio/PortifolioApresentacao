@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="icon" href="img/logo_website.png">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <script src="https://kit.fontawesome.com/b9f1dd2de6.js" crossorigin="anonymous"></script>
     <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">-->
     <title>Mathus Venancio Cordeiro</title>
@@ -252,7 +254,92 @@
         </div>
     </div>
 
-    <!--Projects-->
+    <!---Projects-->
+    <section class="project_sec">
+    
+        <div class="swiper mySwiper container_project">
+          <div class="swiper-wrapper content_project">
+    
+            <div class="swiper-slide card_project">
+              <div class="card-content_project">
+                <div class="image_project">
+                  <img src="img/imgNoot/websiteNoot.png" alt="">
+                </div>
+    
+                <div class="media-icons">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-github"></i>
+                </div>
+    
+                <div class="name-profession">
+                  <span class="name">Someone Name</span>
+                  <span class="profession">Web Developer</span>
+                </div>
+
+                <div class="button_project">
+                  <button class="aboutMe">About Me</button>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide card_project">
+                <div class="card-content_project">
+                  <div class="image_project">
+                    <img src="img/imgNoot/softfloor.png" alt="">
+                  </div>
+      
+                  <div class="media-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-github"></i>
+                  </div>
+      
+                  <div class="name-profession">
+                    <span class="name">Someone Name</span>
+                    <span class="profession">Web Developer</span>
+                  </div>
+  
+                  <div class="button_project">
+                    <button class="aboutMe">About Me</button>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide card_project">
+                <div class="card-content_project">
+                  <div class="image_project">
+                    <img src="images/img1.jpg" alt="">
+                  </div>
+      
+                  <div class="media-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-github"></i>
+                  </div>
+      
+                  <div class="name-profession">
+                    <span class="name">Someone Name</span>
+                    <span class="profession">Web Developer</span>
+                  </div>
+  
+                  <div class="button_project">
+                    <button class="aboutMe">About Me</button>
+                    
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+    
+        <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+      </section>
+    
 
     <!--Contact-->
     <div class="row" id="fale">
@@ -333,8 +420,30 @@
             </div>
         </footer>
     </div>
+    
+ <!-- Swiper JS -->
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+   var swiper = new Swiper(".mySwiper", {
+     slidesPerView: 3,
+     spaceBetween: 30,
+     slidesPerGroup: 3,
+     loop: true,
+     loopFillGroupWithBlank: true,
+     pagination: {
+       el: ".swiper-pagination",
+       clickable: true,
+     },
+     navigation: {
+       nextEl: ".swiper-button-next",
+       prevEl: ".swiper-button-prev",
+     },
+   });
+ </script>
 </body>
-</body>
+
 <script src="javascript/js.js"></script>
 
 </html>
